@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menu — Coffeine & Brunch</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#fff9ef;color:#162c30;font-family:Arial,sans-serif}
+    header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px clamp(16px,4vw,42px);background:#162c30;color:#fff;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+    .brand{font-size:clamp(18px,3vw,27px);font-weight:900;letter-spacing:-.04em}.brand span{color:#f3cf57}
+    nav{display:flex;gap:9px}a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:10px 15px;font-size:13px;font-weight:800;text-decoration:none}
+    .back{border:1px solid rgba(255,255,255,.4);color:#fff}.pdf{background:#f3cf57;color:#162c30}
+    main{height:calc(100vh - 69px);padding:12px;background:#dfe3e2}
+    object{display:block;width:100%;height:100%;border:0;border-radius:12px;background:#fff}
+    .fallback{max-width:560px;margin:15vh auto;padding:30px;border-radius:18px;background:#fff;text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.12)}
+    @media(max-width:600px){header{align-items:flex-start;flex-direction:column}.brand{width:100%}nav{width:100%}nav a{flex:1;padding:10px 8px}main{height:calc(100vh - 116px);padding:6px}object{border-radius:7px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">COFFEINE <span>&</span> BRUNCH</div>
+    <nav><a class="back" href="./index.html">← Voltar</a><a class="pdf" href="./menu.pdf" target="_blank" rel="noopener">Abrir PDF</a></nav>
+  </header>
+  <main>
+    <object data="./menu.pdf#view=FitH" type="application/pdf">
+      <div class="fallback"><h1>O nosso menu</h1><p>O teu navegador não consegue mostrar o menu nesta página.</p><a class="pdf" href="./menu.pdf" target="_blank" rel="noopener">Abrir o menu em PDF</a></div>
+    </object>
+  </main>
+</body>
+</html>
